@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #9b4dca;
+  --secondary-color: #606c76;
+  --neutral-color: #d1d1d1;
+  --button-bg-color: #5cb3fd;
+  --button-border-color: #5cb3fd;
+  --button-text-color: #ffffff;
+  --button-outline-bg: transparent;
+  --button-outline-border: #5cb3fd;
+  --button-clear-bg: transparent;
+  --main--bg: #f4f5f6;
+  --line-height: 1.6;
+  --avatar-bg-color: #888888;
+  --avatar-placeholder-text: "PLACEHOLDER";
+}
+/* container styles */
+.defualt-container {
+  border-left: 3px solid black;
+  padding: 8px;
+}
+.colorize-container {
+  border-left: 3px solid var(--button-bg-color);
+  padding: 30px 8px;
+  background-color: var(--main--bg);
+}
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  overflow: hidden;
+}
+/* Button Styles */
+.btn {
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.default-button,
+.outline-button:hover {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--button-border-color);
+  transition: all 1s;
+}
+
+.outline-button,
+.default-button:hover {
+  background-color: var(--button-outline-bg);
+  color: var(--button-border-color);
+  border: 1px solid var(--button-outline-border);
+}
+
+.clear-button {
+  background-color: var(--button-clear-bg);
+  color: var(--button-border-color);
+  border: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+p,
+ul,
+ol {
+  line-height: var(--line-height);
+  font-weight: 400;
+}
+
+.d-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.m-80 {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+/* Avatar Style */
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: var(--avatar-bg-color);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  justify-content: center;
+}
+
+/* images */
+figure {
+  margin: 0;
+}
+figcaption {
+  font-size: 12px;
+}

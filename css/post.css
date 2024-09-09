@@ -1,0 +1,39 @@
+/* Blog details page */
+header {
+  width: 250px;
+}
+.author {
+  align-items: center;
+  gap: 15px;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+.back-link,
+.author-name {
+  color: var(--primary-color);
+}
+
+.blog-detials ul {
+  list-style: circle;
+  padding: inherit;
+}
+
+.blog-detials ol {
+  padding: inherit;
+}
+
+.main-image {
+  width: 100%;
+}
+
+span.ipsum {
+  background-color: var(--main--bg);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 3px;
+  border-radius: 5px;
+}
