@@ -95,13 +95,14 @@ ol {
   padding: 10px 15px;
   font-weight: bold;
 }
-.default-button {
+.default-button,.outline-button:hover {
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
   border: 1px solid var(--button-border-color);
+  transition: all 1s;
 }
 
-.outline-button {
+.outline-button ,.default-button:hover {
   background-color: var(--button-outline-bg);
   color: var(--button-border-color);
   border: 1px solid var(--button-outline-border);
@@ -145,6 +146,9 @@ body.blog > section:first-of-type {
 .blog ul li a{
     color: var(--primary-color ) !important;
 
+}
+.blog a:hover{
+    color: var(--secondary-color) !important;
 }
 .buttons {
   flex-direction: column;
@@ -207,4 +211,12 @@ footer {
 }
 .main-image {
   width: 100%;
+}
+span.ipsum{
+    background-color: var(--main--bg);
+    font-size: 13px ;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 3px;
+    border-radius: 5px;
 }
